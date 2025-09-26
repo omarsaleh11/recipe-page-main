@@ -1,0 +1,39 @@
+@use "../util" as *;
+.attribution {
+ font-size: rem(15);
+ text-align: center;
+ background-color: var(--logo-bg);
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+ max-width: fit-content;
+ color: var(--about-clr);
+ border-radius: rem(40);
+ gap: rem(15);
+ margin-inline: rem(22);
+ position: fixed;
+ bottom: 2%;
+ right: 1%;
+ & #about {
+  margin-left: rem(15);
+  animation: scale-left-logo 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  &.none {
+   display: none;
+  }
+ }
+ #logo {
+  cursor: pointer;
+  img {
+   border-radius: 50%;
+   max-width: rem(80);
+  }
+ }
+ a {
+  color: var(--logo-clr);
+  font-weight: bold;
+ }
+}
+
+.none {
+ display: none;
+}

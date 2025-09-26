@@ -1,0 +1,48 @@
+:root {
+ --bg-clr-li: hsl(30, 54%, 90%);
+ --bg-clr-dm: hsl(30, 54%, 20%);
+ --main-clr-li: hsl(30, 10%, 34%);
+ --main-clr-dm: hsl(30, 10%, 89%);
+ --secondary-clr-li: hsl(24, 5%, 31%);
+ --secondary-clr-dm: hsl(24, 5%, 88%);
+ --h2-clr-li: hsl(14, 45%, 52%);
+ --h2-clr-dm: hsl(14, 45%, 86%);
+ --h3-clr-li: hsl(332, 60%, 52%);
+ --h3-clr-dm: hsl(332, 51%, 82%);
+ --brdr-clr-li: hsl(30, 18%, 87%);
+ --brdr-clr-dm: hsl(30, 18%, 37%);
+ --white-li: hsl(0, 0%, 100%);
+ --white-dm: hsl(0, 0%, 25%);
+ // logo
+ --about-clr-li: hsl(0, 0%, 95%);
+ --about-clr-dm: hsl(0, 0%, 10%);
+ --logo-bg-li: hsl(0, 0%, 10%);
+ --logo-bg-dm: hsl(0, 0%, 80%);
+ --logo-clr-li: hsl(119, 50%, 69%);
+ --logo-clr-dm: hsl(119, 50%, 30%);
+ --about-clr: var(--about-clr-li);
+ --logo-bg: var(--logo-bg-li);
+ --logo-clr: var(--logo-clr-li);
+ // logo
+ --main-clr: var(--main-clr-li);
+ --secondary-clr: var(--secondary-clr-li);
+ --bg-clr: var(--bg-clr-li);
+ --h2-clr: var(--h2-clr-li);
+ --h3-clr: var(--h3-clr-li);
+ --brdr-clr: var(--brdr-clr-li);
+ --white: var(--white-li);
+}
+.dark-mode {
+ --main-clr: var(--main-clr-dm);
+ --secondary-clr: var(--secondary-clr-dm);
+ --bg-clr: var(--bg-clr-dm);
+ --h2-clr: var(--h2-clr-li);
+ --h3-clr: var(--h3-clr-li);
+ --brdr-clr: var(--brdr-clr-li);
+ --white: var(--white-dm);
+ // logo
+ --about-clr: var(--about-clr-dm);
+ --logo-bg: var(--logo-bg-dm);
+ --logo-clr: var(--logo-clr-dm);
+ // logo
+}

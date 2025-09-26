@@ -1,0 +1,28 @@
+{
+  "name": "main",
+  "version": "2.0.0",
+  "description": "Minimal Gulp workflow to compile Sass",
+  "keywords": [],
+  "author": "omar saleh",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@glidejs/glide": "^3.7.1",
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.1.0",
+    "gulp": "^5.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.5.6",
+    "sass": "^1.89.2"
+  },
+  "browserslist": [
+    "last 1 version",
+    "IE 11",
+    "> 1%"
+  ]
+}

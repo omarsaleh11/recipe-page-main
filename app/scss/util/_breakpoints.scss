@@ -1,0 +1,60 @@
+// to use it
+// @include b.breakpoint(large) {put the content here}
+// 700px, 1000px, 1440px
+@use "sass:map";
+$breakpoint-up: (
+ "500": 31.25em,
+ "600": 37.5em,
+ "700": 43.75em,
+ "750": 46.875em,
+ "800": 50em,
+ "900": 56.25em,
+ "1000": 62.5em,
+ "1100": 68.75em,
+ "1173": 73.37em,
+ "1200": 75em,
+ "xlarge": 90em,
+);
+@mixin breakpoint-up($size) {
+ @media (min-width: map.get($breakpoint-up, $size)) {
+  @content;
+ }
+}
+// 699.98px, 999.98px, 1439.98px
+$breakpoint-down: (
+ "600": 37.5em,
+ "small": 43.7485em,
+ "small899.98": 56.24875em,
+ "750": 46.8735em,
+ "medium": 62.49875em,
+ "large": 89.99875em,
+);
+@mixin breakpoint-down($size) {
+ @media (max-width: map.get($breakpoint-down, $size)) {
+  @content;
+ }
+}
+$height-up: (
+ "600": 37.5em,
+ "700": 43.75em,
+ "800": 50em,
+ "825": 51.5625em,
+ "900": 56.25em,
+);
+@mixin height-up($size) {
+ @media (min-height: map-get($height-up, $size)) {
+  @content;
+ }
+}
+$height-down: (
+ "600": 37.5em,
+ "700": 43.75em,
+ "800": 50em,
+ "825": 51.5625em,
+ "900": 56.25em,
+);
+@mixin height-down($size) {
+ @media (max-height: map-get($height-down, $size)) {
+  @content;
+ }
+}

@@ -1,0 +1,12 @@
+@use "../util" as *;
+
+@keyframes scale-left-logo {
+ 0% {
+  max-width: rem(0);
+  font-size: rem(0);
+ }
+ 100% {
+  font-size: rem(15);
+  max-width: rem(450);
+ }
+}

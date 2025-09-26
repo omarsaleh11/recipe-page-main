@@ -1,0 +1,30 @@
+@use "../util" as *;
+.btns {
+ position: absolute;
+ width: 100%;
+ top: 3%;
+ right: 0;
+ z-index: 5;
+ button {
+  position: absolute;
+  font-size: rem(19);
+  top: 3%;
+  width: rem(150);
+  border: none;
+  background-color: hsl(0, 0%, 36%);
+  border-radius: 25%;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--logo-clr);
+  font-weight: bold;
+ }
+ .dark-mode-btn {
+  right: 2%;
+ }
+ span {
+  display: none;
+ }
+}
+.dark-mode .btns button {
+ background-color: hsl(0, 0%, 96%);
+}

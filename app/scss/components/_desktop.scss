@@ -1,0 +1,111 @@
+@use "../util" as *;
+@include breakpoint-down("600") {
+ main {
+  .card {
+   background-color: var(--white);
+   border-radius: 25px;
+   padding: rem(0);
+   margin: 0;
+   margin-top: rem(25);
+   box-shadow: none;
+   .padding-inline {
+    padding-inline: rem(30);
+   }
+   .header {
+    img {
+     margin-bottom: rem(37);
+     border-radius: 0;
+    }
+    h1 {
+     font-size: rem(36);
+     margin-bottom: rem(22);
+     line-height: 1;
+    }
+    p {
+     font-size: rem(16);
+     line-height: 1.5;
+    }
+   }
+   .preparation {
+    margin: 0 rem(33) rem(26) rem(33);
+    border-radius: 10px;
+    padding: rem(20) rem(24);
+    padding-left: rem(40);
+    h3 {
+     font-size: rem(19.6);
+     font-weight: bold;
+     margin-bottom: rem(14);
+    }
+    ul {
+     li:before {
+      font-size: rem(16);
+      margin-right: rem(10);
+     }
+     li {
+      line-height: 1.49;
+      &:not(:last-child) {
+       margin-bottom: rem(8);
+      }
+     }
+    }
+   }
+   .ingredients {
+    h2 {
+     margin-bottom: rem(19);
+    }
+    ul {
+     padding-left: rem(7);
+     li:before {
+      content: "·";
+      font-size: rem(22);
+      margin-right: rem(30);
+     }
+     li {
+      &:not(:last-child) {
+       margin-bottom: rem(11);
+      }
+     }
+    }
+   }
+   .instructions {
+    margin-bottom: rem(24);
+    h2 {
+     margin-bottom: rem(18);
+    }
+    ol {
+     padding-left: rem(10);
+     li {
+      p {
+       margin-left: rem(16);
+      }
+      &:not(:last-child) {
+       margin-bottom: rem(9);
+      }
+     }
+    }
+   }
+   .nutrition {
+    h2 {
+     margin-bottom: rem(17.5);
+    }
+    p {
+     line-height: 1.49;
+     margin-bottom: rem(13);
+    }
+    ul {
+     li {
+      padding: rem(14) rem(32);
+     }
+    }
+   }
+  }
+ }
+ .center .btns {
+  button {
+   right: 0%;
+   top: rem(-21);
+   border-radius: 0;
+   width: min(rem(580), 100%);
+  }
+ }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="/dist/style.css" />
+  <!--end of CSS 
+      and start of favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- end of the favicon 
+       and the start of the fonts families-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&family=Young+Serif&display=swap" rel="stylesheet" />
+  <!-- end of fonts families -->
+  <title>Frontend Mentor | Newbie Challenges HTML and CSS</title>
+ </head>
+ <body>
+  <div class="center">
+   <div id="remove-events"></div>
+   <nav class="btns" aria-label="dark mode toggle">
+    <button id="dark-mode" class="dark-mode-btn">dark mode</button>
+   </nav>
+   <main id="main">
+    <section class="card">
+     <div class="header">
+      <img
+       src="/images/image-omelette.jpeg"
+       alt="A freshly cooked omelette sits on a white plate, garnished with herbs and vegetables. The omelette appears warm and inviting, suggesting a cozy breakfast setting. No visible text in the image. The overall tone is comforting and appetizing."
+      />
+      <div class="recipe padding-inline">
+       <h1>Simple Omelette Recipe</h1>
+       <p>
+        An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese,
+        vegetables, or meats.
+       </p>
+      </div>
+     </div>
+     <div class="preparation padding-inline">
+      <h3>Preparation time</h3>
+      <ul>
+       <li class="time">
+        <p>
+         <span>Total:</span>
+         Approximately 10 minutes
+        </p>
+       </li>
+       <li>
+        <span>Preparation:</span>
+        5 minutes
+       </li>
+       <li>
+        <span>Cooking:</span>
+        5 minutes
+       </li>
+      </ul>
+     </div>
+     <div class="ingredients padding-inline">
+      <h2>Ingredients</h2>
+      <ul>
+       <li>2-3 large eggs</li>
+       <li>Salt, to taste</li>
+       <li>Pepper, to taste</li>
+       <li>1 tablespoon of butter or oil</li>
+       <li class="time"><p>Optional fillings: cheese, diced vegetables, cooked meats, herbs</p></li>
+      </ul>
+     </div>
+     <div class="instructions padding-inline">
+      <h2>Instructions</h2>
+      <ol>
+       <li>
+        <p>
+         <span>Beat the eggs:</span>
+         In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+        </p>
+       </li>
+       <li>
+        <p>
+         <span>Heat the pan:</span>
+         Place a non-stick frying pan over medium heat and add butter or oil.
+        </p>
+       </li>
+       <li>
+        <p>
+         <span>Cook the omelette:</span>
+         Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+        </p>
+       </li>
+       <li>
+        <p>
+         <span>Add fillings (optional):</span>
+         When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
+        </p>
+       </li>
+       <li>
+        <p>
+         <span>Fold and serve:</span>
+         As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+        </p>
+       </li>
+       <li>
+        <p>
+         <span>Enjoy:</span>
+         Serve hot, with additional salt and pepper if needed.
+        </p>
+       </li>
+      </ol>
+     </div>
+     <div class="nutrition padding-inline">
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <ul>
+       <li>
+        <span>Calories</span>
+        <span>277kcal</span>
+       </li>
+       <li>
+        <span>Carbs</span>
+        <span>0g</span>
+       </li>
+       <li>
+        <span>Protein</span>
+        <span>20g</span>
+       </li>
+       <li>
+        <span>Fat</span>
+        <span>22g</span>
+       </li>
+      </ul>
+     </div>
+    </section>
+   </main>
+   <footer class="attribution">
+    <div id="logo">
+     <img
+      src="/images/logo.webp"
+      alt="Logo with bold stylized letters OS centered on a white background, conveying a modern and professional tone. The letters OS are the only text present."
+      id="logo-lm"
+     />
+     <img
+      src="/images/logo-dm.webp"
+      alt="Logo with bold stylized letters OS on a dark background, presenting a sleek and professional appearance. The letters OS are the only text present."
+      id="logo-dm"
+      class="none"
+     />
+    </div>
+    <ul id="about" class="none">
+     <li>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      . Coded by
+      <a href="https://www.frontendmentor.io/profile/omarsaleh11" target="_blank">Omar Saleh</a>
+      .
+     </li>
+    </ul>
+   </footer>
+  </div>
+  <!-- JavaScript -->
+  <script src="/dist/script.js"></script>
+ </body>
+</html>
